@@ -1,18 +1,26 @@
 - id: blogTitle
-  translation: Dernier message
+  translation: Neuigkeiten
 - id: readMore
-  translation: Lire la suite
+  translation: Weiter lesen
 - id: viewAllPost
-  translation: Voir tous les articles
+  translation: Alle Beiträge lesen
 - id: share
-  translation: Partager
+  translation: Teilen
 - id: aboutAuthor
-  translation: À propos de l'auteur
+  translation: Über den Autor
 - id: authorsPosts
-  translation: Articles de l'auteur
+  translation: Beiträge des Autors
 - id: submit
-  translation: Soumettre
+  translation: Abschicken
 - id: all
-  translation: All
+  translation: Alles
 - id: copyright
-  translation: copyright et copie; 2019 [gethugothemes] (https://gethugothemes.com) tous droits réservés
+  translation: Copyright 2020 [Kanzlei Hartmut Pfeil & Norman Noczinski](https://ra-pfeil.de), Alle Rechte vorbehalten
+- id: yourName
+  translation: Ihr Name
+- id: yourEmail
+  translation: Ihre E-Mail-Adresse
+- id: subject
+  translation: Betreff
+- id: message
+  translation: Nachricht

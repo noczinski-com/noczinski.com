@@ -1,25 +1,25 @@
 ############################## Contact #############################
 contact:
   enable : true
-  title : Contact Us
-  subtitle : Contact Details
-  content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore adipisci.
+  title : Kontaktieren Sie uns
+  subtitle : Kontakt Details
+  content : Sie finden uns in der Vinetastraße 1 in Berlin-Pankow. Sie erreichen uns sehr gut mit öffentlichen Verkehrsmitteln (U-Bahn U 2 / Straßenbahn 50 und M 1). Parkplätze sind in der Umgebung vorhanden.
   form_action: "#" #contact form works with https://formspree.io
   map:
     enable : true
     gmap_api : "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
-    map_latitude : 51.5223477
-    map_longitude: -0.1622023
+    map_latitude : 52.5587242
+    map_longitude: 13.4139481
 
   contact_details :
-    - icon : ti-location-pin # themify icon pack : https://themify.me/themify-icons
-      info : "Khaja Road, Bayzid, Chittagong, Bangladesh"
+    - icon : ti-location-pin
+      info : "[Vinetastraße 1, 13189 Berlin](https://goo.gl/maps/qET5aeWQB7auVmg48)"
       
-    - icon : ti-mobile # themify icon pack : https://themify.me/themify-icons
-      info : "Phone: +880-31-000-000"
+    - icon : ti-mobile
+      info : "Telefon: [+49 (0)30 44 05 39 24](tel:+493044053924)"
       
-    - icon : ti-printer # themify icon pack : https://themify.me/themify-icons
-      info : "Fax: +880-31-000-000"
+    - icon : ti-printer
+      info : "Fax: [+49 (0)30 441 62 07](tel:+49304416207)"
       
-    - icon : ti-email # themify icon pack : https://themify.me/themify-icons
-      info : "Email: hello@meghna.com"
+    - icon : ti-email
+      info : "Email: [noczinski@ra-pfeil.de](mailto:noczinski@ra-pfeil.de)"
