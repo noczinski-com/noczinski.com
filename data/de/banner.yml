@@ -1,0 +1,11 @@
+############################### Banner ################################
+banner:
+  enable : true
+  bg_image_webp : "images/backgrounds/hero-area.webp"
+  bg_image : "images/backgrounds/hero-area.jpg"
+  title : "Kanzlei Hartmut Pfeil & Norman Noczinski"
+  content : "Wir sind an Ihrer Seite!"
+  button:
+    enable : true
+    label : "Entdecken Sie uns!"
+    link : "#services"
