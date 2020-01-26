@@ -5,11 +5,6 @@ contact:
   subtitle : Kontakt Details
   content : Sie finden uns in der Vinetastraße 1 in Berlin-Pankow. Sie erreichen uns sehr gut mit öffentlichen Verkehrsmitteln (U-Bahn U 2 / Straßenbahn 50 und M 1). Parkplätze sind in der Umgebung vorhanden.
   form_action: "#" #contact form works with https://formspree.io
-  map:
-    enable : true
-    gmap_api : "https://maps.googleapis.com/maps/api/js?key=AIzaSyBUsTC8eIsYbhj6nK09CByrCGIQfQKvGM0&libraries=places"
-    map_latitude : 52.5587242
-    map_longitude: 13.4139481
 
   contact_details :
     - icon : ti-location-pin
