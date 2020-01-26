@@ -19,6 +19,8 @@ jobs:
       - name: Build
         run: |
           hugo
+        env:
+          GOGGLE_MAPS_API_KEY: ${{ secrets.GOGGLE_MAPS_API_KEY }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2
