@@ -7,7 +7,7 @@ contact:
   form_action: "#" #contact form works with https://formspree.io
   map:
     enable : true
-    gmap_api : "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+    gmap_api : "https://maps.googleapis.com/maps/api/js?key=AIzaSyBUsTC8eIsYbhj6nK09CByrCGIQfQKvGM0&libraries=places"
     map_latitude : 52.5587242
     map_longitude: 13.4139481
 
