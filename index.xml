@@ -6,108 +6,48 @@
     <description>Recent content on Kanzlei Hartmut Pfeil &amp; Norman Noczinski</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Wed, 12 Sep 2018 14:51:12 +0600</lastBuildDate>
     
 	<atom:link href="https://new.ra-pfeil.de/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Are You Doing the Right Way</title>
-      <link>https://new.ra-pfeil.de/blog/simple-blog-post-8/</link>
-      <pubDate>Wed, 12 Sep 2018 14:51:12 +0600</pubDate>
-      
-      <guid>https://new.ra-pfeil.de/blog/simple-blog-post-8/</guid>
-      <description>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</description>
-    </item>
-    
-    <item>
-      <title>How To Setup Meghna Hugo</title>
-      <link>https://new.ra-pfeil.de/blog/installation/</link>
-      <pubDate>Wed, 12 Sep 2018 14:51:12 +0600</pubDate>
-      
-      <guid>https://new.ra-pfeil.de/blog/installation/</guid>
-      <description>Install this template by following those simple steps: STEP-1 : Hugo installation Check this link below for install hugo on your computer.</description>
-    </item>
-    
-    <item>
-      <title>Simple Blog Post</title>
-      <link>https://new.ra-pfeil.de/blog/simple-blog-post-1/</link>
-      <pubDate>Wed, 12 Sep 2018 12:52:36 +0600</pubDate>
-      
-      <guid>https://new.ra-pfeil.de/blog/simple-blog-post-1/</guid>
-      <description>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</description>
-    </item>
-    
-    <item>
-      <title>Simple Blog Post</title>
-      <link>https://new.ra-pfeil.de/blog/simple-blog-post-2/</link>
-      <pubDate>Wed, 12 Sep 2018 12:52:36 +0600</pubDate>
-      
-      <guid>https://new.ra-pfeil.de/blog/simple-blog-post-2/</guid>
-      <description>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</description>
-    </item>
-    
-    <item>
-      <title>Simple Blog Post</title>
-      <link>https://new.ra-pfeil.de/blog/simple-blog-post-3/</link>
-      <pubDate>Wed, 12 Sep 2018 12:52:36 +0600</pubDate>
-      
-      <guid>https://new.ra-pfeil.de/blog/simple-blog-post-3/</guid>
-      <description>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</description>
-    </item>
-    
-    <item>
-      <title>Simple Blog Post</title>
-      <link>https://new.ra-pfeil.de/blog/simple-blog-post-4/</link>
-      <pubDate>Wed, 12 Sep 2018 12:52:36 +0600</pubDate>
-      
-      <guid>https://new.ra-pfeil.de/blog/simple-blog-post-4/</guid>
-      <description>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</description>
-    </item>
-    
-    <item>
-      <title>Simple Blog Post</title>
-      <link>https://new.ra-pfeil.de/blog/simple-blog-post-5/</link>
-      <pubDate>Wed, 12 Sep 2018 12:52:36 +0600</pubDate>
-      
-      <guid>https://new.ra-pfeil.de/blog/simple-blog-post-5/</guid>
-      <description>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</description>
-    </item>
-    
-    <item>
-      <title>Simple Blog Post</title>
-      <link>https://new.ra-pfeil.de/blog/simple-blog-post-6/</link>
-      <pubDate>Wed, 12 Sep 2018 12:52:36 +0600</pubDate>
-      
-      <guid>https://new.ra-pfeil.de/blog/simple-blog-post-6/</guid>
-      <description>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</description>
-    </item>
-    
-    <item>
-      <title>Simple Blog Post</title>
-      <link>https://new.ra-pfeil.de/blog/simple-blog-post-7/</link>
-      <pubDate>Wed, 12 Sep 2018 12:52:36 +0600</pubDate>
-      
-      <guid>https://new.ra-pfeil.de/blog/simple-blog-post-7/</guid>
-      <description>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</description>
-    </item>
-    
-    <item>
-      <title>John Doe</title>
-      <link>https://new.ra-pfeil.de/author/john-doe/</link>
+      <title>Datenschutz</title>
+      <link>https://new.ra-pfeil.de/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://new.ra-pfeil.de/author/john-doe/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida.</description>
+      <guid>https://new.ra-pfeil.de/privacy/</guid>
+      <description>main.content ol { list-style-type: lower-alpha; }  1. Allgemeine Datenschutzerklärung Der Schutz und die Sicherheit von persönlichen Daten haben bei uns eine hohe Priorität. Daher halten wir uns strikt an die Regeln des deutschen Bundesdatenschutzgesetzes (BDSG). Diese neue Fassung des BDSG ist am 25. Mai 2018 mit der neuen Datenschutz-Grundverordnung (DSGVO) in Kraft getreten.
+Durch die Nutzung unserer Website erklären Sie sich mit der Erhebung, Verarbeitung und Nutzung von Daten gemäß der nachfolgenden Beschreibung einverstanden.</description>
     </item>
     
     <item>
-      <title>Mark Dinn</title>
-      <link>https://new.ra-pfeil.de/author/mark-dinn/</link>
+      <title>Haftungsausschluss</title>
+      <link>https://new.ra-pfeil.de/disclaimer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://new.ra-pfeil.de/author/mark-dinn/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida.</description>
+      <guid>https://new.ra-pfeil.de/disclaimer/</guid>
+      <description>1. Inhalt des Onlineangebotes Die vom Betreiber veröffentlichten Informationen sind mit größtmöglicher Sorgfalt recherchiert. Gleichwohl kann für die Richtigkeit keine Gewähr übernommen werden.
+Die veröffentlichten Informationen dienen ausschließlich zur persönlichen Information des Nutzers. Jegliche Reproduktion oder Verarbeitung, Vervielfältigung und Verbreitung von Teilen dieser Webseiten bedarf der vorherigen ausdrücklichen schriftlichen Genehmigung des Seiteninhabers. Waren- und Firmennamen werden ohne Gewährleistung einer freien Verwendung benutzt. Der Webseitenbetreiber behält es sich ausdrücklich vor, Seiten oder einzelne Angebote oder das gesamte Angebot ohne vorherige Ankündigung zu verändern, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.</description>
+    </item>
+    
+    <item>
+      <title>Impressum</title>
+      <link>https://new.ra-pfeil.de/imprint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://new.ra-pfeil.de/imprint/</guid>
+      <description>Kanzlei Hartmut Pfeil &amp;amp; Norman Noczinski Adresse: Vinetastraße 1, 13189 Berlin
+Telefon: &amp;#43;49 (0)30 44 05 39 24
+Telefax: &amp;#43;49 (0)30 441 62 07
+E-Mail: noczinski@ra-pfeil.de
+USt.-Nr.: 31/470/62661
+Verantwortlicher Redakteur Rechtsanwalt Norman Noczinski
+Zuständige Anwaltskammer Rechtsanwaltskammer Berlin
+Littenstraße 9
+10179 Berlin
+Berufsbezeichnung Rechtsanwälte (Bundesrepublik Deutschland)
+Berufsrechtliche Regelungen  Bundesrechtsanwaltsordnung (BRAO) Berufsordnung für Anwälte (BORA) Rechtsanwaltsvergütungsgesetz (RVG)  Offizielle Firmenbezeichnung Hartmut Pfeil &amp;amp; Norman Noczinski
+Rechtsanwälte</description>
     </item>
     
   </channel>
