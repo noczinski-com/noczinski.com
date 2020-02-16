@@ -1,0 +1,40 @@
+baseURL: https://new.ra-pfeil.de
+title: Kanzlei Hartmut Pfeil & Norman Noczinski
+defaultContentLanguage: de
+disableHugoGeneratorInject: true
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      hardWraps: true
+      unsafe: true
+
+params:
+  description: Ihre kompetenten Rechtsberater in Berlin.
+  author: Norman Noczinski
+  publisher: Norman Noczinski
+  shortTitle: Ra-Pfeil.de
+  vatId: 31/470/62661
+
+  colors:
+    foreground:
+      default: '#afbac4'
+      accent: '#57cbcc'
+      light: '#ffffff'
+      shadow: '#535963'
+    background:
+      default: '#242930'
+      site: '#353b43'
+      edge: '#1d2024'
+
+  map:
+    enable: true
+    apiKey: AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ
+    lat: 52.5587242
+    lon: 13.4139481
+
+languages:
+  de:
+    languageCode: de-de
+    contentDir: content/de

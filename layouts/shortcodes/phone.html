@@ -1,0 +1,10 @@
+{{- $data := index .Site.Data .Site.Language.Lang -}}
+{{- $value := index $data.contact (.Get 1) -}}
+
+{{- if .Get 0 | eq "display" -}}
+    {{- $value -}}
+{{- else if .Get 0 | eq "link" -}}
+    tel:{{- replace (replace $value "(0)" "") " " "" -}}
+{{- else -}}
+    {{- errorf "Cannot handle variant %s" (.Get 0) -}}
+{{- end -}}

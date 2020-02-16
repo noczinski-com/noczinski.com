@@ -1,0 +1,30 @@
+html, body {
+  @include font(default);
+  color: $color-default;
+  background: $color-background-default;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html[data-kind=home], html[data-kind=home] > body {
+  height: auto;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.content {
+  padding: 1.5em 2em;
+}

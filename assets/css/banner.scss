@@ -1,0 +1,37 @@
+section#banner {
+  background: $color-background-section url("/images/banner-background.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $color-light;
+  font-size: 1.5em;
+
+  &:before {
+    content: '';
+    background: rgba(0, 0, 0, .70);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  > * {
+    text-align: center;
+    z-index: 1;
+    padding: 2em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  a[type=button] {
+    @include button(light);
+    margin-top: 1em;
+  }
+}

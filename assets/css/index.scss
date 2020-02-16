@@ -1,0 +1,14 @@
+$color-default: {{ .Site.Params.colors.foreground.default }};
+$color-accent: {{ .Site.Params.colors.foreground.accent }};
+$color-light: {{ .Site.Params.colors.foreground.light }};
+$color-shadow: {{ .Site.Params.colors.foreground.shadow }};
+$color-background-section: {{ .Site.Params.colors.background.default }};
+$color-background-default: {{ .Site.Params.colors.background.site }};
+$color-background-edge: {{ .Site.Params.colors.background.edge }};
+
+@import "common";
+@import "header";
+@import "banner";
+@import "main";
+@import "footer";
+

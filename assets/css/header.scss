@@ -1,0 +1,52 @@
+header {
+  background-color: $color-background-edge;
+  padding: 1em $padding-default-x;
+  font-size: 0.9rem;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  .home img.logo.with-text {
+    background: none;
+    width: auto;
+    height: 2em;
+  }
+
+  nav {
+    display: flex;
+
+    ul {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    li {
+      &::before {
+        content: "|";
+        margin: 0 0.5em;
+        color: $color-shadow;
+      }
+
+      &:first-child::before {
+        content: "";
+        margin: 0;
+      }
+    }
+
+  }
+}

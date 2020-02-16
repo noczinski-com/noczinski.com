@@ -1,33 +1,14 @@
-{{ define "main" }}
+{{ define "body" }}
+    {{- partial "banner.html" . -}}
+    {{- partial "header.html" . -}}
 
-{{ partial "banner.html" . }}
+    <main>
+        {{- partial "about-us.html" . -}}
+        {{- partial "team.html" . -}}
+        {{- partial "services.html" . -}}
+        {{- partial "costs.html" . -}}
+        {{- partial "contact.html" . -}}
+    </main>
 
-{{ partial "navigation.html" . }}
-
-{{ partial "about.html" . }}
-
-{{ partial "feature.html" . }}
-
-{{ partial "cta.html" . }}
-
-{{ partial "service.html" . }}
-
-{{ partial "skill.html" . }}
-
-{{ partial "portfolio.html" . }}
-
-{{ partial "funfacts.html" . }}
-
-{{ partial "team.html" . }}
-
-{{ partial "pricing.html" . }}
-
-{{ partial "testimonial.html" . }}
-
-{{ partial "blog.html" . }}
-
-{{ partial "contact.html" . }}
-
-{{ partial "map.html" . }}
-
+    {{- partial "footer.html" . -}}
 {{ end }}

@@ -1,26 +1,21 @@
-- id: blogTitle
-  translation: Neuigkeiten
-- id: readMore
-  translation: Weiter lesen
-- id: viewAllPost
-  translation: Alle Beiträge lesen
-- id: share
-  translation: Teilen
-- id: aboutAuthor
-  translation: Über den Autor
-- id: authorsPosts
-  translation: Beiträge des Autors
-- id: submit
-  translation: Abschicken
-- id: all
-  translation: Alles
-- id: copyright
-  translation: Copyright 2020 [Kanzlei Hartmut Pfeil & Norman Noczinski](https://ra-pfeil.de), Alle Rechte vorbehalten
-- id: yourName
-  translation: Ihr Name
-- id: yourEmail
-  translation: Ihre E-Mail-Adresse
-- id: subject
-  translation: Betreff
-- id: message
-  translation: Nachricht
+- id: findOutMore
+  translation: Erfahren Sie mehr
+- id: aboutUs
+  translation: Über uns
+- id: lawyers
+  translation: Anwälte
+- id: ourServices
+  translation: Unsere Dienstleistungen
+- id: costs
+  translation: Kosten
+- id: contactUs
+  translation: Kontaktieren Sie uns
+- id: imprint
+  translation: Impressum
+- id: disclaimer
+  translation: Haftungsausschluss
+- id: dataPrivacy
+  translation: Datenschutz
+- id: allRightsReserved
+  translation:  Alle Rechte vorbehalten
+

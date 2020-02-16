@@ -1,0 +1,10 @@
+{{- $data := index .Site.Data .Site.Language.Lang -}}
+{{- $value := $data.contact.email -}}
+
+{{- if .Get 0 | eq "display" -}}
+    {{- $value -}}
+{{- else if .Get 0 | eq "link" -}}
+    mailto:{{- $value -}}
+{{- else -}}
+    {{- errorf "Cannot handle variant %s" (.Get 0) -}}
+{{- end -}}

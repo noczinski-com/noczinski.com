@@ -1,0 +1,38 @@
+footer {
+  font-size: 0.9rem;
+  background-color: $color-background-edge;
+  padding: $padding-default;
+  text-align: center;
+
+  p, ul {
+    margin: 0;
+    margin-block-end: 0.5em;
+    margin-block-start: 0.5em;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+
+    li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+
+      &::before {
+        content: "|";
+        margin: 0 0.5em;
+        color: $color-shadow;
+      }
+
+      &:first-child::before {
+        content: "";
+        margin: 0;
+      }
+    }
+  }
+}

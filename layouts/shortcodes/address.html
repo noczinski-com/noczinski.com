@@ -1,0 +1,10 @@
+{{- $data := index .Site.Data .Site.Language.Lang -}}
+{{- $value := $data.contact.address -}}
+
+{{- if .Get 0 | eq "short" -}}
+{{- $value.line }}, {{ $value.zip }} {{ $value.city -}}
+{{- else if .Get 0 | eq "link" -}}
+{{- $value.link -}}
+{{- else -}}
+{{- errorf "Cannot handle variant %s" (.Get 0) -}}
+{{- end -}}

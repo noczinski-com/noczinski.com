@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}"
+      data-kind="{{.Kind}}"
+      data-type="{{.Type}}"
+      data-weight="{{.Weight}}"
+      data-permalink="{{.RelPermalink}}">
+{{- partial "head.html" . -}}
+<body>
+    {{- block "body" . }}{{- end }}
+</body>
+</html>
