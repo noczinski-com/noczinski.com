@@ -47,6 +47,7 @@ header {
   background-color: #1d2024;
   padding: 1em 2em;
   font-size: 0.9rem;
+  z-index: 1;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -125,10 +126,8 @@ html, body {
   background: #353b43;
   margin: 0;
   padding: 0;
-  height: 100%; }
-
-html[data-kind=home], html[data-kind=home] > body {
-  height: auto; }
+  height: auto;
+  scroll-padding-top: 3em; }
 
 body {
   display: flex;
@@ -170,3 +169,83 @@ footer {
       footer ul li:first-child::before {
         content: "";
         margin: 0; }
+
+.container.with-boxes {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  .container.with-boxes > article {
+    margin: 1rem;
+    padding: 2.5rem;
+    background: #242930;
+    height: 20rem;
+    width: 17rem;
+    line-height: 1.8em;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto; }
+    .container.with-boxes > article .icon-box {
+      font-size: 3em; }
+
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("/icons/fontawesome/webfontsfa-brands-400.eot");
+  src: url("/icons/fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/icons/fontawesome/fa-brands-400.woff2") format("woff2"), url("/icons/fontawesome/fa-brands-400.woff") format("woff"), url("/icons/fontawesome/fa-brands-400.ttf") format("truetype"), url("/icons/fontawesome/fa-brands-400.svg#fontawesome") format("svg"); }
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("/icons/fontawesome/fa-regular-400.eot");
+  src: url("/icons/fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("/icons/fontawesome/fa-regular-400.woff2") format("woff2"), url("/icons/fontawesome/fa-regular-400.woff") format("woff"), url("/icons/fontawesome/fa-regular-400.ttf") format("truetype"), url("/icons/fontawesome/fa-regular-400.svg#fontawesome") format("svg"); }
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("/icons/fontawesome/fa-solid-900.eot");
+  src: url("/icons/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/icons/fontawesome/fa-solid-900.woff2") format("woff2"), url("/icons/fontawesome/fa-solid-900.woff") format("woff"), url("/icons/fontawesome/fa-solid-900.ttf") format("truetype"), url("/icons/fontawesome/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.icon-box {
+  background: url("/images/box.min.64510fee3862483ee648f728b4d8b5b2fbfadf49a207bc893645d12dba293242.svg");
+  background-size: 100% 100%;
+  display: inline-block;
+  padding: 1.3em; }
+
+.icon.fab {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400; }
+
+.icon.fa {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+
+.icon.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; }
