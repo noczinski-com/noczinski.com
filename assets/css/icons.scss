@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("/icons/fontawesome/webfontsfa-brands-400.eot");
+  src: url("/icons/fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+  url("/icons/fontawesome/fa-brands-400.woff2") format("woff2"),
+  url("/icons/fontawesome/fa-brands-400.woff") format("woff"),
+  url("/icons/fontawesome/fa-brands-400.ttf") format("truetype"),
+  url("/icons/fontawesome/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("/icons/fontawesome/fa-regular-400.eot");
+  src: url("/icons/fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+  url("/icons/fontawesome/fa-regular-400.woff2") format("woff2"),
+  url("/icons/fontawesome/fa-regular-400.woff") format("woff"),
+  url("/icons/fontawesome/fa-regular-400.ttf") format("truetype"),
+  url("/icons/fontawesome/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("/icons/fontawesome/fa-solid-900.eot");
+  src: url("/icons/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+  url("/icons/fontawesome/fa-solid-900.woff2") format("woff2"),
+  url("/icons/fontawesome/fa-solid-900.woff") format("woff"),
+  url("/icons/fontawesome/fa-solid-900.ttf") format("truetype"),
+  url("/icons/fontawesome/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+.icon-box {
+  background: url($box-image);
+  background-size: 100% 100%;
+  display: inline-block;
+  padding: 1.3em;
+
+}
+
+.icon {
+  &.fab {
+    //noinspection CssNoGenericFontName
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400;
+  }
+
+  &.fa {
+    //noinspection CssNoGenericFontName
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+  }
+
+  &.fas {
+    //noinspection CssNoGenericFontName
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+  }
+}

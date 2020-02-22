@@ -2,6 +2,7 @@ header {
   background-color: $color-background-edge;
   padding: 1em $padding-default-x;
   font-size: 0.9rem;
+  z-index: 1;
 
   position: -webkit-sticky;
   position: sticky;

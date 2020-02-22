@@ -6,9 +6,14 @@ $color-background-section: {{ .Site.Params.colors.background.default }};
 $color-background-default: {{ .Site.Params.colors.background.site }};
 $color-background-edge: {{ .Site.Params.colors.background.edge }};
 
+{{- $boxImage := resources.Get "images/box.svg" | resources.ExecuteAsTemplate "images/box.svg" . | resources.Minify | resources.Fingerprint }}
+$box-image: '{{ $boxImage.RelPermalink }}';
+
 @import "common";
 @import "header";
 @import "banner";
 @import "main";
 @import "footer";
+@import "container.with-boxes";
+@import "icons";
 

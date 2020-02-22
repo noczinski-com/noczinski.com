@@ -1,18 +1,21 @@
+{{- $data := index .Site.Data .Site.Language.Lang -}}
+{{- with index $data `about-us` -}}
+
 <section id="about-us">
 
     <h2>{{ i18n `aboutUs` }}</h2>
     <div class="underline"></div>
 
-    <p>Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen
-       und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile
-       daraus zu ziehen?</p>
+    <div class="container with-boxes">
+        {{ range .articles}}
+            <article id="{{.id}}">
+                <div class="icon-box">
+                    <span class="icon {{.iconType}}">&#x{{.icon}};</span>
+                </div>
 
-    <p>Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz
-       vermeidet, welcher keine daraus resultierende Freude nach sich zieht? Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz
-       ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können.</p>
-
-    <p>Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein
-       Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher
-       keine daraus resultierende Freude nach sich zieht? Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur</p>
-
+                <p>{{ .text | markdownify }}</p>
+            </article>
+        {{ end }}
+    </div>
 </section>
+{{- end -}}

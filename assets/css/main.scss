@@ -4,13 +4,9 @@ html, body {
   background: $color-background-default;
   margin: 0;
   padding: 0;
-  height: 100%;
-}
-
-html[data-kind=home], html[data-kind=home] > body {
   height: auto;
+  scroll-padding-top: 3em;
 }
-
 
 body {
   display: flex;
