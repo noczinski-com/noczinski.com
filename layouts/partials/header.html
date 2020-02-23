@@ -1,15 +1,22 @@
+{{- $hamburgerJs := resources.Get "js/hamburger.js" | resources.Minify -}}
 {{- $data := index .Site.Data .Site.Language.Lang -}}
 <header>
     <a class="home" href="/" aria-label="{{ .Title }}">
         {{ partial "svg/logo_text.svg" . }}
     </a>
+
+    <button class="hamburger hamburger--squeeze" type="button" aria-label="Menu" aria-controls="navigation">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <script>{{- $hamburgerJs.Content | safeJS -}}</script>
+
     {{- with index $data `links` -}}
-    <nav>
-        <ul>
-            {{- range .header -}}
-                <li><a href="{{ .link }}">{{ i18n .titleKey }}</a></li>
-            {{- end -}}
-        </ul>
+    <nav id="navigation">
+        {{- range .header -}}
+        <a href="{{ .link }}">{{ i18n .titleKey }}</a>
+        {{- end -}}
     </nav>
     {{- end -}}
 </header>

@@ -1,7 +1,6 @@
 {{- $stylesTemplate := resources.Get "css/index.scss"}}
 {{- $stylesRaw := $stylesTemplate | resources.ExecuteAsTemplate "bundle.scss" . -}}
 {{- $styles := $stylesRaw | resources.ToCSS | resources.Minify | resources.Fingerprint -}}
-{{- $styles := $stylesRaw | resources.ToCSS| resources.Fingerprint -}}
 
 {{- $browserConfig := resources.Get "meta/browserconfig.xml" | resources.ExecuteAsTemplate "browserconfig.xml" . -}}
 {{- $webmanifest   := resources.Get "meta/site.webmanifest"  | resources.ExecuteAsTemplate "site.webmanifest"  . -}}

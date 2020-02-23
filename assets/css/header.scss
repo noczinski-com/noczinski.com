@@ -1,4 +1,10 @@
+$hamburger-layer-color: $color-light;
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+@import "hamburgers/hamburgers";
+
 header {
+
   background-color: $color-background-edge;
   padding: 1em $padding-default-x;
   font-size: 0.9rem;
@@ -27,19 +33,10 @@ header {
   }
 
   nav {
-    display: flex;
+    padding: 0;
+    margin: 0;
 
-    ul {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-
-    li {
+    a {
       &::before {
         content: "|";
         margin: 0 0.5em;
@@ -51,6 +48,43 @@ header {
         margin: 0;
       }
     }
+  }
+
+  .hamburger {
+    display: none;
+
+    &:focus {outline:0;}
+  }
+
+  @media only screen and (max-width: 750px) {
+    nav {
+      display: none;
+    }
+
+    &[data-expanded=true] nav {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: ((1em * 2) + 2em);
+      background: $color-background-edge;
+
+      & > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 1em;
+
+        &::before {
+          content: "";
+          margin: 0;
+        }
+      }
+
+    }
+
+    .hamburger {
+      display: inline-block;
+    }
 
   }
+
 }
