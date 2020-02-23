@@ -1,0 +1,52 @@
+$mobile-width-threshold: 960px;
+
+.container.hero-text {
+  background-color: $color-background-section;
+  line-height: 1.6em;
+  text-align: initial;
+
+  @media only screen and (min-width: $mobile-width-threshold) {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  > * {
+    &.hero-banner {
+      min-height: 18em;
+    }
+
+    @media only screen and (min-width: $mobile-width-threshold) {
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 0 1 50%;
+      -ms-flex: 0 1 50%;
+      flex: 0 1 50%;
+      -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+      align-self: stretch;
+    }
+
+    p {
+      padding: $padding-default;
+    }
+  }
+
+}
+

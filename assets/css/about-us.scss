@@ -1,0 +1,17 @@
+section#about-us {
+  .details {
+    margin-top: 3em;
+  }
+  .details .hero-banner {
+    background-position: 0 -15px;
+  }
+
+}
+
+.webp-supported section#about-us .details .hero-banner {
+  background-image: url("/images/about-us-background.webp");
+}
+
+.webp-not-supported section#about-us .details .hero-banner {
+  background-image: url("/images/about-us-background.jpeg");
+}

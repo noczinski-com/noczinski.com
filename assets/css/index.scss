@@ -10,10 +10,12 @@ $color-background-edge: {{ .Site.Params.colors.background.edge }};
 $box-image: '{{ $boxImage.RelPermalink }}';
 
 @import "common";
+@import "main";
+@import "container.with-boxes";
+@import "container.2-columns";
+@import "icons";
 @import "header";
 @import "banner";
-@import "main";
+@import "about-us";
 @import "footer";
-@import "container.with-boxes";
-@import "icons";
 

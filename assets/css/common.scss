@@ -63,7 +63,7 @@ $padding-default: $padding-default-y $padding-default-x;
 }
 
 section {
-  padding: $padding-default;
+  padding: $padding-default-y 0;
   text-align: center;
 }
 
@@ -91,4 +91,10 @@ div.underline {
     background-color: $color-accent;
   }
 
+}
+
+.hero-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

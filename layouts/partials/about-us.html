@@ -6,7 +6,7 @@
     <h2>{{ i18n `aboutUs` }}</h2>
     <div class="underline"></div>
 
-    <div class="container with-boxes">
+    <div class="container with-boxes teasers">
         {{ range .teasers }}
             <article id="{{.id}}">
                 <div class="icon-box">
@@ -16,6 +16,13 @@
                 <p>{{ .text | markdownify }}</p>
             </article>
         {{ end }}
+    </div>
+
+    <div class="container hero-text details">
+        <div class="hero-banner"></div>
+        <article id="who-we-are">
+            <p>{{ .whoWeAre | markdownify }}</p>
+        </article>
     </div>
 </section>
 {{- end -}}
