@@ -6,9 +6,9 @@
     {{- with index $data `links` -}}
     <nav>
         <ul>
-            {{ range .header }}
+            {{- range .header -}}
                 <li><a href="{{ .link }}">{{ i18n .titleKey }}</a></li>
-            {{ end }}
+            {{- end -}}
         </ul>
     </nav>
     {{- end -}}

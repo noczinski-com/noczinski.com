@@ -4,9 +4,9 @@
     <p>Copyright 2020 <a href="/">{{.Title}}</a>, {{i18n `allRightsReserved`}}</p>
     {{- with index $data `links` -}}
     <ul class="links">
-        {{ range .footer }}
-        <li><a href="{{ .link }}">{{ i18n .titleKey }}</a></li>
-        {{ end }}
+        {{- range .footer -}}
+            <li><a href="{{ .link }}">{{ i18n .titleKey }}</a></li>
+        {{- end -}}
     </ul>
     {{- end -}}
 </footer>
