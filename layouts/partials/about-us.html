@@ -10,7 +10,7 @@
         {{ range .articles}}
             <article id="{{.id}}">
                 <div class="icon-box">
-                    <span class="icon {{.iconType}}">&#x{{.icon}};</span>
+                    {{ partial .icon . }}
                 </div>
 
                 <p>{{ .text | markdownify }}</p>

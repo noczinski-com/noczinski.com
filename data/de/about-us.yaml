@@ -1,16 +1,13 @@
 articles:
   - id: competent
-    iconType: fas
-    icon: f4c4
+    icon: svg/fontawesome/hands-helping-solid.svg
     text: Wir bieten unseren Mandanten erfolgreiche, kompetente und strategische Beratung in Rechtsfragen seit 1990.
 
   - id: experienced
-    iconType: fas
-    icon: f0e3
+    icon: svg/fontawesome/gavel-solid.svg
     text: Wir verstehen uns als moderne Kanzlei, die ihren Kunden auf Grund ihres großen Erfahrungsschatzes
       in einer Vielzahl von Rechtsgebieten zur Seite stehen kann.
 
   - id: more-questions
-    iconType: fas
-    icon: f129
+    icon: svg/fontawesome/info-solid.svg
     text: Haben Sie eine rechtliche Frage? [Schreiben Sie uns eine Nachricht oder rufen Sie uns an!](#contact)

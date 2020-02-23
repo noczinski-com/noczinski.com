@@ -17,10 +17,13 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between;
 
-  .home img.logo.with-text {
-    background: none;
+  .home svg {
     width: auto;
     height: 2em;
+
+    #logo {
+      fill: $color-accent !important;
+    }
   }
 
   nav {
