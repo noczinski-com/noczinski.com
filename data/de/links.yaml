@@ -1,0 +1,25 @@
+header:
+  - titleKey: aboutUs
+    link: /#about-us
+
+  - titleKey: lawyers
+    link: /#team
+
+  - titleKey: ourServices
+    link: /#services
+
+  - titleKey: costs
+    link: /#costs
+
+  - titleKey: contactUs
+    link: /#contact
+
+footer:
+  - titleKey: dataPrivacy
+    link: /privacy
+
+  - titleKey: disclaimer
+    link: /disclaimer
+
+  - titleKey: imprint
+    link: /imprint

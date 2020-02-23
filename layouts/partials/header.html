@@ -1,14 +1,15 @@
+{{- $data := index .Site.Data .Site.Language.Lang -}}
 <header>
-    <a class="home" href="/">
+    <a class="home" href="/" title="{{ .Title }}">
         {{ partial "svg/logo_text.svg" . }}
     </a>
+    {{- with index $data `links` -}}
     <nav>
         <ul>
-            <li><a href="/#about-us">{{ i18n `aboutUs` }}</a></li>
-            <li><a href="/#team">{{ i18n `lawyers` }}</a></li>
-            <li><a href="/#services">{{ i18n `ourServices` }}</a></li>
-            <li><a href="/#costs">{{ i18n `costs` }}</a></li>
-            <li><a href="/#contact">{{ i18n `contactUs` }}</a></li>
+            {{ range .header }}
+                <li><a href="{{ .link }}">{{ i18n .titleKey }}</a></li>
+            {{ end }}
         </ul>
     </nav>
+    {{- end -}}
 </header>

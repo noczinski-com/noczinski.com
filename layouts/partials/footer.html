@@ -1,8 +1,12 @@
+{{- $data := index .Site.Data .Site.Language.Lang -}}
+{{- with index $data `links` -}}
+
 <footer>
     <p>Copyright 2020 <a href="/">{{.Title}}</a>, {{i18n `allRightsReserved`}}</p>
     <ul class="links">
-        <li><a href="/privacy">{{i18n `dataPrivacy`}}</a></li>
-        <li><a href="/disclaimer">{{i18n `disclaimer`}}</a></li>
-        <li><a href="/imprint">{{i18n `imprint`}}</a></li>
+        {{ range .footer }}
+        <li><a href="{{ .link }}">{{ i18n .titleKey }}</a></li>
+        {{ end }}
     </ul>
 </footer>
+{{- end -}}
