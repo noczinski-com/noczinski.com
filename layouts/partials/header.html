@@ -1,6 +1,6 @@
 {{- $data := index .Site.Data .Site.Language.Lang -}}
 <header>
-    <a class="home" href="/" title="{{ .Title }}">
+    <a class="home" href="/" aria-label="{{ .Title }}">
         {{ partial "svg/logo_text.svg" . }}
     </a>
     {{- with index $data `links` -}}
