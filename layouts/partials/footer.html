@@ -3,10 +3,10 @@
 <footer>
     <p>Copyright 2020 <a href="/">{{.Title}}</a>, {{i18n `allRightsReserved`}}</p>
     {{- with index $data `links` -}}
-    <ul class="links">
+    <div class="links">
         {{- range .footer -}}
-            <li><a href="{{ .link }}">{{ i18n .titleKey }}</a></li>
+            <a href="{{ .link }}">{{ i18n .titleKey }}</a>
         {{- end -}}
-    </ul>
+    </div>
     {{- end -}}
 </footer>

@@ -4,9 +4,6 @@
 
 {{- $browserConfig := resources.Get "meta/browserconfig.xml" | resources.ExecuteAsTemplate "browserconfig.xml" . -}}
 {{- $webmanifest   := resources.Get "meta/site.webmanifest"  | resources.ExecuteAsTemplate "site.webmanifest"  . -}}
-
-{{- $jsMain := resources.Get "js/main.js" -}}
-{{- $scripts := slice $jsMain | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint -}}
 <head>
     <meta charset="utf-8" />
 
@@ -37,5 +34,4 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-    <script src="{{ $scripts.RelPermalink }}"></script>
 </head>
