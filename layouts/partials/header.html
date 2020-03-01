@@ -1,4 +1,3 @@
-{{- $hamburgerJs := resources.Get "js/hamburger.js" | resources.Minify -}}
 {{- $data := index .Site.Data .Site.Language.Lang -}}
 <header>
     <a class="home" href="/" aria-label="{{ .Title }}">
@@ -10,7 +9,6 @@
             <span class="hamburger-inner"></span>
         </span>
     </button>
-    <script>{{- $hamburgerJs.Content | safeJS -}}</script>
 
     {{- with index $data `links` -}}
     <nav id="navigation">

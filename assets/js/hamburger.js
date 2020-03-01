@@ -1,14 +1,22 @@
-const toggleHamburger = state => {
-    const active = hamburger.classList.toggle("is-active", state);
-    header.setAttribute("data-expanded", active);
-};
-const hamburger = document.querySelector(".hamburger");
-const header = document.querySelector("header");
-hamburger.addEventListener("click", () => {
-    toggleHamburger();
+function toggleHamburger(hamburger, state) {
+    var active = hamburger.classList.toggle("is-active", state);
+    forEachElementBy('header', function(header) {
+        header.setAttribute("data-expanded", active);
+    });
+}
+
+forEachElementBy('.hamburger', function(hamburger) {
+    hamburger.addEventListener("click", function () {
+        toggleHamburger(hamburger);
+    });
 });
-header.addEventListener("focusout", e => {
-    if (!header.contains(e.relatedTarget)) {
-        toggleHamburger(false);
-    }
+
+forEachElementBy('header', function(header) {
+    header.addEventListener("focusout", function (e) {
+        if (!e || !e.relatedTarget && !header.contains(e.relatedTarget)) {
+            forEachElementBy('.hamburger', function(hamburger) {
+                toggleHamburger(hamburger, false);
+            });
+        }
+    });
 });

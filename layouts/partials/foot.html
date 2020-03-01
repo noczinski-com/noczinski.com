@@ -1,3 +1,2 @@
-{{- $jsMain := resources.Get "js/main.js" -}}
-{{- $scripts := slice $jsMain | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint -}}
-<script src="{{ $scripts.RelPermalink }}"></script>
+{{- $bundle := resources.Match "js/*" | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint -}}
+<script src="{{ $bundle.RelPermalink }}"></script>
