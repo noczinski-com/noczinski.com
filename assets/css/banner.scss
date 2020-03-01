@@ -1,4 +1,5 @@
 section#banner {
+  background-image: url("/images/banner-background.webp");
   background-color: $color-background-default;
   background-size: cover;
   height: 100vh;
@@ -43,10 +44,6 @@ section#banner {
   }
 }
 
-.webp-supported section#banner {
-  background-image: url("/images/banner-background.webp");
-}
-
-.webp-not-supported section#banner {
-  background-image: url("/images/banner-background.jpeg");
+[data-webp-supported=false] section#banner {
+  background-image: url("/images/banner-background.jpg");
 }

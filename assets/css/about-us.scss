@@ -3,15 +3,12 @@ section#about-us {
     margin-top: 3em;
   }
   .details .hero-banner {
+    background-image: url("/images/about-us-background.webp");
     background-position: 0 -15px;
   }
 
 }
 
-.webp-supported section#about-us .details .hero-banner {
-  background-image: url("/images/about-us-background.webp");
-}
-
-.webp-not-supported section#about-us .details .hero-banner {
-  background-image: url("/images/about-us-background.jpeg");
+[data-webp-supported=false] section#about-us .details .hero-banner {
+  background-image: url("/images/about-us-background.jpg");
 }

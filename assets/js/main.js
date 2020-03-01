@@ -1,10 +1,23 @@
-function displayWindowSize() {
+function unsafeExecution(what, onError) {
     try {
-        let elements = Array.from(document.getElementsByTagName('html'))
+        return what();
+    } catch (e) {
+        if (window.console && window.console.debug) {
+            console.debug('Operation was not successful.', what, e);
+        }
+        if (onError) {
+            return onError();
+        }
+    }
+}
+
+function displayWindowSize() {
+    unsafeExecution(function () {
+        var elements = Array.from(document.getElementsByTagName('html'))
             .concat(Array.from(document.getElementsByTagName('body')));
-        let windowHeight = document.documentElement.clientHeight;
-        let bodyHeight = document.body.clientHeight;
-        for (let i = 0; i < elements.length; i++) {
+        var windowHeight = document.documentElement.clientHeight;
+        var bodyHeight = document.body.clientHeight;
+        for (var i = 0; i < elements.length; i++) {
             if (elements[i].style !== undefined) {
                 if (windowHeight > bodyHeight) {
                     elements[i].style.height = '100%';
@@ -13,34 +26,40 @@ function displayWindowSize() {
                 }
             }
         }
-    } catch (e) {
-        if (window.debug) {
-            throw e;
-        }
-    }
+    })
 }
 
-try {
-    window.addEventListener("resize", displayWindowSize);
-    window.addEventListener("load", displayWindowSize);
-
-    async function supportsWebp() {
-        if (!self.createImageBitmap) return false;
-
-        const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
-        const blob = await fetch(webpData).then(r => r.blob());
-        return createImageBitmap(blob).then(() => true, () => false);
-    }
-
-    (async () => {
-        if(await supportsWebp()) {
-            document.body.classList.add('webp-supported');
-        } else {
-            document.body.classList.add('webp-not-supported');
+function supportsWebp(callback) {
+    unsafeExecution(function () {
+        if (!window.createImageBitmap) {
+            callback(false);
+            return;
         }
-    })();
-} catch (e) {
-    if (window.debug) {
-        throw e;
-    }
+        var data = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoCAAEAAQAcJaQAA3AA/v3AgAA=';
+        fetch(data).then(function (response) {
+            return response.blob();
+        }).then(function (blob) {
+            // If the createImageBitmap method succeeds, return true, otherwise false
+            createImageBitmap(blob).then(function () {
+                callback(true);
+            }, function () {
+                callback(false);
+            });
+        });
+    })
 }
+
+function webpCheck() {
+    supportsWebp(function (supported) {
+        unsafeExecution(() => {
+            var elements = document.getElementsByTagName('body');
+            for (var i = 0; i < elements.length; i++) {
+                elements.item(i).setAttribute('data-webp-supported', supported);
+            }
+        })
+    });
+}
+
+window.addEventListener("resize", displayWindowSize);
+window.addEventListener("load", displayWindowSize);
+window.addEventListener("load", webpCheck);
