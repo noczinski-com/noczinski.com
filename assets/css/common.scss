@@ -65,6 +65,10 @@ $padding-default: $padding-default-y $padding-default-x;
 section {
   padding: $padding-default-y 0;
   text-align: center;
+
+  > * {
+    margin: $padding-default-y 0;
+  }
 }
 
 h2 {

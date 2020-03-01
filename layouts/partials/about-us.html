@@ -18,11 +18,9 @@
         {{ end }}
     </div>
 
-    <div class="container hero-text details">
+    <article class="container hero-text details right">
         <div class="hero-banner"></div>
-        <article id="who-we-are">
-            <p>{{ .whoWeAre | markdownify }}</p>
-        </article>
-    </div>
+        <div class="hero-content"><div>{{- .whoWeAre | markdownify -}}</div></div>
+    </article>
 </section>
 {{- end -}}

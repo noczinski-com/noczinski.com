@@ -1,18 +1,22 @@
+{{- $data := index .Site.Data .Site.Language.Lang -}}
+{{- with index $data `team` -}}
+
 <section id="team">
 
     <h2>{{ i18n `lawyers` }}</h2>
     <div class="underline"></div>
 
-    <p>Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen
-       und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile
-       daraus zu ziehen?</p>
-
-    <p>Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz
-          vermeidet, welcher keine daraus resultierende Freude nach sich zieht? Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz
-       ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können.</p>
-
-    <p>Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein
-        Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher
-       keine daraus resultierende Freude nach sich zieht? Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur</p>
+    {{ range .people }}
+        <article id="team-{{.id}}" class="container hero-text details right">
+            <div class="hero-banner" style="background-image: url('/images/{{- .id -}}.webp');"></div>
+            <div class="hero-content">
+                <div>
+                    <h3>{{- .name -}}</h3>
+                    {{ .text | markdownify }}
+                </div>
+            </div>
+        </article>
+    {{ end }}
 
 </section>
+{{- end -}}

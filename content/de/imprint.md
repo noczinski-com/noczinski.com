@@ -27,3 +27,12 @@ Rechtsanwälte (Bundesrepublik Deutschland)
 ### Offizielle Firmenbezeichnung
 Hartmut Pfeil & Norman Noczinski
 Rechtsanwälte
+
+### Quellen
+
+1. Bilder der Kanzlei und des Anwalts Norman Noczinski: Gregor Noczinski - Exklusive Nutzung nur für die Verwendung auf dieser Webseite eingeräumt
+2. Verschiedene Stock Fotos: [iStock](https://www.istockphoto.com/)
+   1. [Recht-Gerechtigkeit](https://www.istockphoto.com/de/foto/recht-gerechtigkeit-gm836112526-138344537)
+3. Verschiedene Stock Fotos: [unsplash.com](https://unsplash.com/license)
+   1. [man writing on paper](https://unsplash.com/photos/OQMZwNd3ThU)
+4. Verschiedene Grafiken: [Font Awesome](https://fontawesome.com/license)

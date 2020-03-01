@@ -23,5 +23,12 @@ supportsWebp(function (supported) {
         forEachElementBy('body', function(element) {
             element.setAttribute('data-webp-supported', supported);
         });
-    })
+    });
+    if (!supported) {
+        forEachElementBy('*', function(element) {
+            if (element.style.backgroundImage && typeof element.style.backgroundImage === 'string') {
+                element.style.backgroundImage = element.style.backgroundImage.replace(/\.webp(["']\))?$/, '.jpg$1');
+            }
+        });
+    }
 });
