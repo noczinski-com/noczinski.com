@@ -19,3 +19,7 @@
 - id: allRightsReserved
   translation:  Alle Rechte vorbehalten
 
+- id: pageNotFound
+  translation: Seite nicht gefunden
+- id: pageNotFoundLink
+  translation: Bitte klicken Sie hier um zur Startseite zu gelangen.

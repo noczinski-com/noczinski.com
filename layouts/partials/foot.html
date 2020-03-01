@@ -1,2 +1,2 @@
-{{- $bundle := resources.Match "js/*" | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint -}}
+{{- $bundle := resources.Match "js/*" | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint -}}
 <script src="{{ $bundle.RelPermalink }}"></script>

@@ -15,7 +15,7 @@
     ],
     "theme_color": "{{ .Site.Params.colors.background.site }}",
     "background_color": "{{ .Site.Params.colors.background.site }}",
-    "start_url": "{{ .Site.BaseURL }}",
+    "start_url": "/",
     "display": "standalone"
 }
 
