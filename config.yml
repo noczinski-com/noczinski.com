@@ -29,7 +29,7 @@ params:
       edge: '#1d2024'
 
   map:
-    enable: true
+    enable: false
     apiKey: AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ
     lat: 52.5587242
     lon: 13.4139481

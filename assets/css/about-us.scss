@@ -7,12 +7,6 @@ section#about-us {
     margin-top: 3em;
   }
   .details .hero-banner {
-    background-image: url("/images/about-us-background.webp");
     background-position: 0 -15px;
   }
-
-}
-
-[data-webp-supported=false] section#about-us .details .hero-banner {
-  background-image: url("/images/about-us-background.jpg");
 }

@@ -11,11 +11,14 @@ section#banner {
   color: $color-light;
   font-size: 1.5em;
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 800px) {
     font-size: 1em;
   }
-  @media only screen and (max-width: 350px) {
+  @media only screen and (max-width: 400px) {
     font-size: 0.75em;
+  }
+  @media only screen and (max-width: 300px) {
+    font-size: 0.5em;
   }
 
   &:before {
@@ -35,12 +38,20 @@ section#banner {
   }
 
   h1 {
-    font-size: 2em;
+    display: none;
   }
 
   a[type=button] {
     @include button(light);
     margin-top: 1em;
+  }
+
+  svg {
+    height: 4em;
+    width: auto;
+    #logo {
+      fill: $color-accent !important;
+    }
   }
 }
 

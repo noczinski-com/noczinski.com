@@ -1,3 +1,29 @@
+@media only screen and (min-width: $element-max-width) {
+  .map {
+    display: inline-block;
+    width: $element-max-width;
+  }
+}
+
 .map {
   height: 25em;
+}
+
+#contact article {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding-bottom: 1em;
+
+      svg {
+        width: 1em;
+        padding-right: 0.1em;
+        vertical-align: text-top;
+      }
+    }
+  }
+
 }

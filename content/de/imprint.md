@@ -35,4 +35,6 @@ Rechtsanwälte
    1. [Recht-Gerechtigkeit](https://www.istockphoto.com/de/foto/recht-gerechtigkeit-gm836112526-138344537)
 3. Verschiedene Stock Fotos: [unsplash.com](https://unsplash.com/license)
    1. [man writing on paper](https://unsplash.com/photos/OQMZwNd3ThU)
+   2. [two person writing on paper on brown wooden table](https://unsplash.com/photos/YXemfQiPR_E)
+   3. [shallow depth of field photo of gray coin-operated parking meter](https://unsplash.com/photos/lipPKzctyuQ)
 4. Verschiedene Grafiken: [Font Awesome](https://fontawesome.com/license)

@@ -9,6 +9,8 @@ $color-background-edge: {{ .Site.Params.colors.background.edge }};
 {{- $boxImage := resources.Get "images/box.svg" | resources.ExecuteAsTemplate "images/box.svg" . | resources.Minify | resources.Fingerprint }}
 $box-image: '{{ $boxImage.RelPermalink }}';
 
+$element-max-width: 1300px;
+
 @import "common";
 @import "main";
 @import "container.with-boxes";

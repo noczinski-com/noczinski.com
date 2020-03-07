@@ -1,6 +1,7 @@
 <section id="banner">
     <div>
-        <h1>Kanzlei Hartmut&nbsp;Pfeil & Norman&nbsp;Noczinski</h1>
+        <h1>{{.Site.Title}}</h1>
+        {{ partial "svg/logo_text.svg" . }}
         <p>{{.Site.Params.description}}</p>
         <p>
             <a href="/#about-us" type="button">{{ i18n "findOutMore" }}</a>

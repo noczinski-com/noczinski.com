@@ -4,7 +4,7 @@
 <section id="about-us">
 
     <h2>{{ i18n `aboutUs` }}</h2>
-    <div class="underline"></div>
+    <div class="underline"></div><br>
 
     <div class="container with-boxes teasers">
         {{ range .teasers }}
@@ -19,7 +19,7 @@
     </div>
 
     <article class="container hero-text details right">
-        <div class="hero-banner"></div>
+        <div class="hero-banner" style="background-image: url(/images/about-us-background.jpg)"></div>
         <div class="hero-content"><div>{{- .whoWeAre | markdownify -}}</div></div>
     </article>
 </section>

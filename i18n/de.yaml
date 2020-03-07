@@ -23,3 +23,16 @@
   translation: Seite nicht gefunden
 - id: pageNotFoundLink
   translation: Bitte klicken Sie hier um zur Startseite zu gelangen.
+
+- id: contactDetails
+  translation: Kontakt Details
+- id: approach
+  translation: Anfahrt
+- id: address
+  translation: Adresse
+- id: phone
+  translation: Telefon
+- id: fax
+  translation: Fax
+- id: email
+  translation: E-Mail

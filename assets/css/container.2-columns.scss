@@ -1,14 +1,15 @@
 $mobile-width-threshold: 960px;
 
 .container.hero-text {
+  max-width: $element-max-width;
   background-color: $color-background-section;
   line-height: 1.6em;
   text-align: initial;
 
   @media only screen and (min-width: $mobile-width-threshold) {
     display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    display: -webkit-inline-flex;
+    display: inline-flex;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
