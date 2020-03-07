@@ -1,5 +1,4 @@
 {{- $bundle := resources.Match "js/*" | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint -}}
-{{- $bundle := resources.Match "js/*" | resources.Concat "bundle.js" | resources.Fingerprint -}}
 <script src="{{ $bundle.RelPermalink }}"></script>
 
 {{- if .Site.Params.map.enable -}}
