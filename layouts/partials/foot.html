@@ -1,2 +1,8 @@
 {{- $bundle := resources.Match "js/*" | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint -}}
+{{- $bundle := resources.Match "js/*" | resources.Concat "bundle.js" | resources.Fingerprint -}}
 <script src="{{ $bundle.RelPermalink }}"></script>
+
+{{- if .Site.Params.map.enable -}}
+    {{- $apiKey := (cond (ne (getenv "GOGGLE_MAPS_API_KEY") "") (getenv "GOGGLE_MAPS_API_KEY") .Site.Params.map.apiKey) -}}
+    <script async defer src='https://maps.googleapis.com/maps/api/js?key={{ $apiKey | safeURL }}&callback=initGoogleMaps'></script>
+{{- end -}}
