@@ -17,6 +17,9 @@ params:
   shortTitle: Ra-Pfeil.de
   vatId: 31/470/62661
 
+  images:
+    - /images/social-banner.jpg
+
   colors:
     foreground:
       default: '#afbac4'
