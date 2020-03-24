@@ -18,7 +18,7 @@ params:
   vatId: 31/470/62661
 
   images:
-    - /images/social-banner.jpg
+    - /images/banner-background.jpg
 
   colors:
     foreground:
