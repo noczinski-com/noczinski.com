@@ -12,9 +12,9 @@ USt.-Nr.: {{<vat-id>}}
 Rechtsanwalt Norman Noczinski
 
 ### Zuständige Anwaltskammer
-Rechtsanwaltskammer Berlin
-Littenstraße 9
-10179 Berlin
+Rechtsanwaltskammer Mecklenburg-Vorpommern
+Arsenalstraße 9
+19053 Schwerin
 
 ### Berufsbezeichnung
 Rechtsanwälte (Bundesrepublik Deutschland)
